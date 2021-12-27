@@ -43,9 +43,9 @@ let insertRNode = function(root, data){
 // 递归遍历
 function tarverse(root){
     // 前序遍历
-    root.left?tarverse(root.left):''
+    root.left ? tarverse(root.left):''
     //中序遍历
-    root.right?tarverse(root.right):''
+    root.right ? tarverse(root.right):''
     //后序遍历
     console.log(root)
 
