@@ -11,8 +11,6 @@ var buildTree = function(before, cont) {
     return root
 }
 
-
-
 function buildTreeFun(before, cont){
     if(before.length === 1 && cont.length === 1 && before[0] === cont[0]){
         return new TreeNode(before[0])

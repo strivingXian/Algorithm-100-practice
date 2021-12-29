@@ -1,7 +1,7 @@
 // 二叉树节点
 class TreeNode{
-    constructor(value){
-        this.value = value
+    constructor(val){
+        this.val = val
         this.left = this.right = null
     }
 }
@@ -47,9 +47,9 @@ function tarverse(root){
     //中序遍历
     root.right ? tarverse(root.right):''
     //后序遍历
-    console.log(root)
-
 }
 let root = createTree(1,2,4,23,null,23,45,3,124,346,null,1,0,124,null)
 
 tarverse(root)
+
+export {createTree}
