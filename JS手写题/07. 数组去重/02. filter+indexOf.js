@@ -1,0 +1,7 @@
+function distinct(arr){
+    return arr.filter((item, index) => {
+        return arr.indexOf(item) === index
+    })
+}
+
+console.log(distinct([1, 3, 2, 6, 3, 10, 43, 32, 10, 6]))

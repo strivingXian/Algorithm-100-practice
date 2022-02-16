@@ -8,6 +8,39 @@
 </head>
 <body>
 <!-- <button onclick="fun()">点击</button> -->
+<div class="parent">
+    <div class="child">我是水平居中的子元素</div>
+</div>
 </body>
-<script src="./排序/HeapSort.js"></script>
+<!-- <script src="https://leetcode-cn.com/problems/api/favorites?callback=show"></script> -->
+<style>
+    .parent {
+        position: relative;
+        height: 200px;
+        background-color: burlywood;
+    }
+    
+    .child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        width: 100px;
+        margin: auto auto;
+        background-color: brown;
+    }
+</style>
+<script>
+    var script = document.createElement("script");
+    script.src = "http://169.254.200.238:8080/jsonp.do";
+    document.body.insertBefore(script, document.body.firstChild);
+</script>
+
+<script type="text/javascript">
+    function handleResponse(response){
+            console.log(response);
+    }
+</script>
 </html>
